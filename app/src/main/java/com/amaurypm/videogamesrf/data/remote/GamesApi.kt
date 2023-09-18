@@ -30,11 +30,11 @@ interface GamesApi {
     //cm/games/game_detail.php?id=21347&name=amaury
 
     //Para Apiary
-    @GET("games/games_list")
+    @GET("pacient/pacient_list")
     fun getGamesApiary(): Call<List<GameDto>>
 
     //games/game_detail/21357
-    @GET("games/game_detail/{id}")
+    @GET("pacient/pacient_detail/{id}")
     fun getGameDetailApiary(
         @Path("id") id: String?/*,
         @Path("name") name: String?*/

@@ -1,13 +1,10 @@
 package com.amaurypm.videogamesrf.util
 
-/**
- * Creado por Amaury Perea Matsumura el 02/09/23
- */
-
+//Se define la URL base
 object Constants{
     //const val BASE_URL: String = "https://www.serverbpw.com/"
     //const val BASE_URL: String = "http://10.0.2.2:8888/"
-    const val BASE_URL: String = "https://private-a649a-games28.apiary-mock.com/"
+    const val BASE_URL: String = "https://private-61d9644-personas9.apiary-mock.com/"
 
     const val LOGTAG = "LOGS"
 }

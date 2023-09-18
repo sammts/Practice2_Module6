@@ -2,15 +2,18 @@ package com.amaurypm.videogamesrf.data.remote.model
 
 import com.google.gson.annotations.SerializedName
 
-/**
- * Creado por Amaury Perea Matsumura el 02/09/23
- */
-
+//Información del API con los detalles
 data class GameDetailDto(
-    @SerializedName("title")
-    var title: String? = null,
     @SerializedName("image")
     var image: String? = null,
-    @SerializedName("long_desc")
-    var longDesc: String? = null
+    @SerializedName("name")
+    var name: String? = null,
+    @SerializedName("age")
+    var age: String? = null,
+    @SerializedName("parent")
+    var parent: String? = null,
+    @SerializedName("state")
+    var state: String? = null,
+    @SerializedName("description")
+    var description: String? = null
 )

@@ -82,7 +82,7 @@ class GamesListFragment : Fragment() {
                 override fun onFailure(call: Call<List<GameDto>>, t: Throwable) {
                     Log.d(Constants.LOGTAG, "Error: ${t.message}")
 
-                    Toast.makeText(requireActivity(), "No hay conexión", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireActivity(), "No se ha podido establecer una conexión", Toast.LENGTH_SHORT).show()
 
                     binding.pbLoading.visibility = View.GONE
 

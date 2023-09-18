@@ -59,9 +59,15 @@ class GameDetailFragment : Fragment() {
                             binding.apply {
                                 pbLoading.visibility = View.GONE
 
-                                tvTitle.text = response.body()?.title
+                                tvTitle.text = response.body()?.name
 
-                                tvLongDesc.text = response.body()?.longDesc
+                                tvAge.text = response.body()?.age
+
+                                tvParent.text = response.body()?.parent
+
+                                tvState.text = response.body()?.state
+
+                                tvLongDesc.text = response.body()?.description
 
                                 Glide.with(requireContext())
                                     .load(response.body()?.image)
@@ -73,7 +79,7 @@ class GameDetailFragment : Fragment() {
                         override fun onFailure(call: Call<GameDetailDto>, t: Throwable) {
                             binding.pbLoading.visibility = View.GONE
 
-                            Toast.makeText(requireActivity(), "No hay conexión", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(requireActivity(), "No se ha podido establecer una conexión", Toast.LENGTH_SHORT).show()
                         }
 
                     })

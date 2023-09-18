@@ -3,6 +3,7 @@ package com.amaurypm.videogamesrf.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.amaurypm.videogamesrf.R
 import com.amaurypm.videogamesrf.data.remote.PokemonApi
 import com.amaurypm.videogamesrf.data.remote.model.PokemonDetailDto
@@ -50,7 +51,7 @@ class TestPokemon : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<PokemonDetailDto>, t: Throwable) {
-
+                Toast.makeText(this@TestPokemon, "Error al consultar API", Toast.LENGTH_LONG).show()
             }
 
         })

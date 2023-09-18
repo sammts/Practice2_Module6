@@ -5,9 +5,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
 
-/**
- * Creado por Amaury Perea Matsumura el 02/09/23
- */
+
 interface PokemonApi {
 
     //https://pokeapi.co/api/v2/pokemon/149/
